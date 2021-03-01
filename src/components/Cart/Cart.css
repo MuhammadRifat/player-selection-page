@@ -1,0 +1,11 @@
+.cart{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(252, 249, 249);
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px lightgray;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}

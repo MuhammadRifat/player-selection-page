@@ -8,7 +8,6 @@ import { Col } from 'react-bootstrap';
 
 const Player = (props) => {
     const {image, name, role, team, salary, battingStyle, bowlingStyle} = props.player;
-    console.log(props.player);
     return (
         <Col md={4}>
             <div className="player">
@@ -20,10 +19,10 @@ const Player = (props) => {
                     <small>Team: {team}</small><br></br>
                     <small>Batting Style: {battingStyle}</small><br></br>
                     <small>Bowling Style: {bowlingStyle}</small><br></br>
-                    <small>Salary: {salary}</small><br></br>
+                    <small>Salary: {salary} &#2547;</small><br></br>
                 </div>
                 </div>
-                <button className="btn-select"><FontAwesomeIcon icon={faPlus} /> Select</button>
+                <button className="btn-select" onClick={() => props.handleSelectBtn(props.player)}><FontAwesomeIcon icon={faPlus} /> Select</button>
             </div>
         </Col>
     );
