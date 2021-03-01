@@ -20,7 +20,7 @@ const Player = (props) => {
                     <small>Batting Style: {battingStyle}</small><br></br>
                     
                     {
-                        bowlingStyle===""?<span></span>:<small>Bowling Style: {bowlingStyle}<br></br></small>
+                        bowlingStyle===""?<span></span>:<small>Bowling Style: {bowlingStyle}<br></br></small>  //fixing empty bowling style data
                     }
                     <small>Salary: {salary} &#2547;</small><br></br>
                 </div>

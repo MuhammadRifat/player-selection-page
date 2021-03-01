@@ -12,7 +12,7 @@ const Cart = (props) => {
                 {
                     props.cart.map(player => <tr><td><small>{count++}. {player.name}</small></td><td><small>: {player.salary} &#2547;</small></td></tr>)
                 }
-            <tr><th colspan="2"><hr></hr></th></tr>
+            <tr><th colSpan="2"><hr></hr></th></tr>
             <tr><th><small><b>Total Expenses</b></small></th><th><small><b>: {totalSalary} &#2547;</b></small></th></tr>
             </table>
         </div>
