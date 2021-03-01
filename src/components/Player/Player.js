@@ -18,7 +18,10 @@ const Player = (props) => {
                     <small>Role: {role}</small><br></br>
                     <small>Team: {team}</small><br></br>
                     <small>Batting Style: {battingStyle}</small><br></br>
-                    <small>Bowling Style: {bowlingStyle}</small><br></br>
+                    
+                    {
+                        bowlingStyle===""?<span></span>:<small>Bowling Style: {bowlingStyle}<br></br></small>
+                    }
                     <small>Salary: {salary} &#2547;</small><br></br>
                 </div>
                 </div>
